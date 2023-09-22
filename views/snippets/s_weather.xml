@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="s_weather" name="Weather Forecast Snippet">
+        <section>
+            <div class="container s_weather">
+                <h1 class="text-center">Hello World!</h1>
+            </div>
+        </section>
+    </template>
+<!--    <template id="snippet_options" inherit_id="website.snippet_options">-->
+<!--        <xpath path="." position="inside">-->
+<!--            <div data-drop-in=".s_weather"/>-->
+<!--        </xpath>-->
+<!--    </template>-->
+</odoo>

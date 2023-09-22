@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="snippets" inherit_id="website.snippets">
+        <xpath expr="//t[@t-snippet='website.s_banner']" position="before">
+            <t t-snippet="oxp_2023.s_weather" string="Weather Forecast" t-thumbnail="/oxp_2023/static/src/img/s_weather.svg"/>
+        </xpath>
+    </template>
+</odoo>

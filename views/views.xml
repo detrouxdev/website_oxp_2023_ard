@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="oxp_2023.list">
+      <field name="name">oxp_2023 list</field>
+      <field name="model">oxp_2023.oxp_2023</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="oxp_2023.action_window">
+      <field name="name">oxp_2023 window</field>
+      <field name="res_model">oxp_2023.oxp_2023</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="oxp_2023.action_server">
+      <field name="name">oxp_2023 server</field>
+      <field name="model_id" ref="model_oxp_2023_oxp_2023"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="oxp_2023" id="oxp_2023.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="oxp_2023.menu_1" parent="oxp_2023.menu_root"/>
+    <menuitem name="Menu 2" id="oxp_2023.menu_2" parent="oxp_2023.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="oxp_2023.menu_1_list" parent="oxp_2023.menu_1"
+              action="oxp_2023.action_window"/>
+    <menuitem name="Server to list" id="oxp_2023" parent="oxp_2023.menu_2"
+              action="oxp_2023.action_server"/>
+-->
+  </data>
+</odoo>
