@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_oxp_2023_oxp_2023,oxp_2023.oxp_2023,model_oxp_2023_oxp_2023,base.group_user,1,1,1,1

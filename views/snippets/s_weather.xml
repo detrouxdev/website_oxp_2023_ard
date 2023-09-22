@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="s_weather" name="Weather Forecast Snippet">
+        <section class="pt40 pb40">
+            <div class="container s_weather">
+                <h1 class="text-center">Hello World!</h1>
+            </div>
+        </section>
+    </template>
+</odoo>

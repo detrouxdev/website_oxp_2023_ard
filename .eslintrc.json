@@ -1,0 +1,51 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2022, // /!\ RegExp lookbehind assertions of ES9 are however not supported on Safari, do not use them.
+        "sourceType": "module"
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+        "array-bracket-spacing": ["warn", "never"],
+        "brace-style": "warn",
+        // "camelcase": ["warn"], // Respect that rule for new lines but enabling it generates many linter errors in old files
+        "comma-dangle": ["off"],
+        "comma-spacing": ["warn", {"before": false, "after": true}],
+        "curly": ["warn"],
+        "eol-last": ["error"],
+        "eqeqeq": ["warn", "smart"],
+        "indent": ["off", 4, {"SwitchCase": 1}],
+        "key-spacing": ["warn"],
+        "keyword-spacing": ["warn"],
+        "linebreak-style": ["error", "unix"],
+        "no-console": ["warn", {"allow": ["warn", "error"]}],
+        "no-empty": ["warn"],
+        "no-multi-spaces": ["warn"],
+        "no-redeclare": ["warn"],
+        "no-unused-expressions": ["warn"],
+        "no-unused-vars": ["warn", {"args": "none"}],
+        "no-use-before-define": ["warn", "nofunc"],
+        "object-curly-spacing": ["off", "never"],
+        "quotes": ["off", "double"],
+        "semi": ["error", "always"],
+        "semi-spacing": ["warn", {"before": false, "after": true}],
+        "space-before-blocks": ["warn"],
+        "space-before-function-paren": ["warn", {"anonymous": "always", "named": "never"}],
+        "space-infix-ops": ["warn"],
+        "space-in-parens": ["warn", "never"]
+    },
+    "globals": {
+        "openerp": true, "odoo": true, "owl": true, "we3": true,"luxon": true,
+
+        "$": false, "jQuery": false, "_": false, "google": false,
+        "QUnit": false, "moment": false, "nv": false, "d3": false, "ace": false,
+        "py": false, "gapi": false, "PDFJS": false, "ClipboardJS": false,
+        "PDFSlidesViewer": false
+    }
+}
+
+
+
