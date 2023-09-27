@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 82 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g>
+        <g>
+            <rect x="0" y="0" width="82" height="60" style="fill:none;"/>
+            <g>
+                <g>
+                    <rect id="path-1" x="0" y="0" width="82" height="60" style="fill:rgb(121,209,242);"/>
+                    <g id="Cloud" transform="matrix(2.72166,0,0,2.82017,-23.3702,-81.3992)">
+                        <ellipse cx="23.759" cy="40.085" rx="4.721" ry="3.306" style="fill:rgb(235,235,235);"/>
+                        <ellipse cx="28.78" cy="39.321" rx="3.571" ry="4.157" style="fill:rgb(235,235,235);"/>
+                        <ellipse cx="22.167" cy="37.028" rx="5.013" ry="4.74" style="fill:rgb(235,235,235);"/>
+                        <ellipse cx="16.472" cy="39.108" rx="5.017" ry="4.517" style="fill:rgb(235,235,235);"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
