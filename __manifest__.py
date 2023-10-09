@@ -33,4 +33,13 @@
     'demo': [
         'demo/demo.xml',
     ],
+    'assets': {
+        'website.assets_wysiwyg': [
+            'oxp_2023/static/src/js/snippets/s_weather/options.js'
+        ],
+        'web.assets_frontend': [
+            'oxp_2023/static/src/js/snippets/s_weather/000.js',
+            'oxp_2023/static/src/js/snippets/s_weather/000.xml',
+        ]
+    }
 }

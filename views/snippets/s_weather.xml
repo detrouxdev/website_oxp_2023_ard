@@ -2,41 +2,13 @@
 <odoo>
     <template id="s_weather" name="Weather Forecast Snippet">
         <section class="pt32 pb32 s_weather">
-            <div class="container">
-<!--                <span class="d-block text-center">Hello World!</span>-->
-                <div class="row align-items-center">
-                    <t t-foreach="[('Monday', 'clouds'),('Tuesday', 'rain'),('Wednesday', 'sun'),('Thursday', 'sun_clouds'),('Friday', 'clouds')]" t-as="day">
-                        <div class="card col mx-2 p-0">
-                            <img class="card-img-top img-fluid" t-att-src="'/oxp_2023/static/src/img/' + day[1] + '.svg'" t-att-alt="day[1]"/>
-                            <div class="card-body">
-                                <h6 class="card-subtitle">
-                                    <t t-out="day[0]"/>
-                                </h6>
-                                <h5 class="card-title">
-                                    20°C
-                                </h5>
-                            </div>
-                        </div>
-                    </t>
-                </div>
-            </div>
+            <div class="container days_container"/>
         </section>
     </template>
     <template id="oxp_2023.snippets_options" inherit_id="website.snippet_options">
         <xpath expr="." position="inside">
-            <div data-selector=".s_weather">
-                <we-select string="Card style" data-apply-to=".card">
-                    <we-button data-select-class="bg-dark text-white">Dark</we-button>
-                    <we-button data-select-class="">Light</we-button>
-                </we-select>
-            </div>
-            <div data-selector=".s_weather .card">
-                <we-select string="Weather" data-apply-to=".card-img-top" data-attribute-name="src">
-                    <we-button data-select-attribute="/oxp_2023/static/src/img/sun.svg">Sun</we-button>
-                    <we-button data-select-attribute="/oxp_2023/static/src/img/clouds.svg">Clouds</we-button>
-                    <we-button data-select-attribute="/oxp_2023/static/src/img/rain.svg">Rain</we-button>
-                    <we-button data-select-attribute="/oxp_2023/static/src/img/sun_clouds.svg">Sun and Clouds</we-button>
-                </we-select>
+            <div data-js="Weather" data-selector=".s_weather">
+                <we-input class="o_we_large" data-target=".days_container" string="Address" data-select-address="" data-no-preview="true"/>
             </div>
         </xpath>
     </template>
