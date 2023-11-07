@@ -6,7 +6,7 @@
                 <div class="row align-items-center">
                     <t t-foreach="[('Monday', 'clouds'),('Tuesday', 'rain'),('Wednesday', 'sun'),('Thursday', 'sun_clouds'),('Friday', 'clouds')]" t-as="day">
                         <div class="card col mx-2 p-0">
-                            <img class="card-img-top img-fluid" t-att-src="'/oxp_2023/static/src/img/' + day[1] + '.svg'" t-att-alt="day[1]"/>
+                            <img class="card-img-top img-fluid" t-attf-src="/oxp_2023/static/src/img/{{ day[1] }}.svg" t-att-alt="day[1]"/>
                             <div class="card-body">
                                 <h6 class="card-subtitle">
                                     <t t-out="day[0]"/>
